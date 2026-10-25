@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Global Hearts | International Relationships</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #7e1647, #d93670);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px #00000012;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #a51e53;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button, .contact-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit {
+  background: #b5205b;
+  color: white;
+}
+
+.whatsapp {
+  background: #168b4b;
+  color: white;
+}
+
+.email {
+  background: #7e1647;
+  color: white;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.consent input {
+  width: auto;
+  margin-top: 5px;
+}
+
+.consent label {
+  margin: 0;
+  font-weight: normal;
+}
+
+.note {
+  font-size: 13px;
+  color: #655761;
+}
+
+#result {
+  overflow-wrap: anywhere;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  background: #321622;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 18px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>❤️ Global Hearts</h1>
+  <p>Connecting people and building meaningful international relationships.</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Welcome to Global Hearts</h2>
+
+    <p>
+      Are you looking for a serious relationship with someone from
+      another country? Complete our registration form and tell us
+      about yourself and the partner you hope to meet.
+    </p>
+
+    <p>
+      We value honesty, respect, privacy, and genuine connections.
+      Registration does not guarantee a match.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>International Relationship Form</h2>
+
+    <p class="note">All fields marked * are required.</p>
+
+    <form id="relationshipForm">
+
+      <label for="name">Full name *</label>
+      <input id="name" name="Full name" required maxlength="100">
+
+      <label for="email">Your email address *</label>
+      <input id="email" name="Client email" type="email"
+             required maxlength="150">
+
+      <label for="age">Your age *</label>
+      <input id="age" name="Age" type="number"
+             min="18" max="100" required>
+
+      <label for="gender">Gender *</label>
+      <select id="gender" name="Gender" required>
+        <option value="">Select gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Prefer not to say</option>
+      </select>
+
+      <label for="country">Country of residence *</label>
+      <input id="country" name="Country of residence"
+             required maxlength="100">
+
+      <label for="nationality">Nationality</label>
+      <input id="nationality" name="Nationality" maxlength="100">
+
+      <label for="status">Relationship status *</label>
+      <select id="status" name="Relationship status" required>
+        <option value="">Select status</option>
+        <option>Single</option>
+        <option>Divorced</option>
+        <option>Widowed</option>
+      </select>
+
+      <label for="children">Do you have children?</label>
+      <select id="children" name="Children">
+        <option value="">Choose an answer</option>
+        <option>Yes</option>
+        <option>No</option>
+        <option>Prefer not to say</option>
+      </select>
+
+      <label for="relationship">What relationship are you looking for? *</label>
+      <select id="relationship" name="Relationship sought" required>
+        <option value="">Choose an option</option>
+        <option>Marriage</option>
+        <option>Serious long-term relationship</option>
+        <option>Friendship before a relationship</option>
+        <option>Open to possibilities</option>
+      </select>
+
+      <label for="preferredCountry">
+        Which country's partner would you prefer? *
+      </label>
+      <input id="preferredCountry" name="Preferred partner country"
+             required maxlength="100"
+             placeholder="For example, Canada">
+
+      <label for="partnerAge">Preferred partner's age range</label>
+      <input id="partnerAge" name="Preferred partner age range"
+             placeholder="For example, 28–40" maxlength="50">
+
+      <label for="qualities">What qualities do you want in a partner? *</label>
+      <textarea id="qualities" name="Desired partner qualities"
+                required maxlength="1500"
+                placeholder="Describe your ideal partner"></textarea>
+
+      <label for="interests">Your hobbies and interests</label>
+      <textarea id="interests" name="Hobbies and interests"
+                maxlength="1000"></textarea>
+
+      <label for="meeting">Are you open to meeting in person?</label>
+      <select id="meeting" name="Meeting preference">
+        <option value="">Choose an answer</option>
+        <option>Yes</option>
+        <option>No</option>
+        <option>Maybe in the future</option>
+      </select>
+
+      <label for="contactMethod">Preferred contact method *</label>
+      <select id="contactMethod" name="Preferred contact method" required>
+        <option value="">Choose a contact method</option>
+        <option value="email">Email</option>
+        <option value="whatsapp">WhatsApp</option>
+      </select>
+
+      <label for="additional">Additional information</label>
+      <textarea id="additional" name="Additional information"
+                maxlength="1500"
+                placeholder="Anything else you would like to share?"></textarea>
+
+      <div class="consent">
+        <input id="consent" type="checkbox" required>
+        <label for="consent">
+          I confirm that I am at least 18 years old and consent to
+          sharing my information with the agent to respond to my inquiry.
+        </label>
+      </div>
+
+      <button class="submit" type="submit">
+        Submit My Application
+      </button>
+
+      <p id="result" role="status" aria-live="polite"></p>
+
+      <p class="note">
+        When you submit, your email or WhatsApp app will open with
+        your answers prepared. You must press Send to deliver them.
+      </p>
+
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Contact Our Agent</h2>
+
+    <p>
+      <strong>Email:</strong>
+      james62@idf.ovh
+    </p>
+
+    <p>
+      <strong>WhatsApp:</strong>
+      +254184317913
+    </p>
+
+    <a class="contact-button whatsapp"
+       href="https://wa.me/254184317913"
+       target="_blank"
+       rel="noopener noreferrer">
+      💬 Contact Us on WhatsApp
+    </a>
+
+    <a class="contact-button email"
+       href="mailto:james62@idf.ovh?subject=International%20Relationship%20Inquiry">
+      📧 Email Our Agent
+    </a>
+
+    <p class="note">
+      Protect your personal information. Never share passwords,
+      bank details, or identity documents through this form.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Global Hearts</p>
+  <p>Connecting hearts across borders.</p>
+  <p class="note">
+    International introductions do not guarantee marriage,
+    visas, or immigration approval.
+  </p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+const form = document.getElementById("relationshipForm");
+const result = document.getElementById("result");
+
+const agentEmail = "james62@idf.ovh";
+const agentWhatsApp = "254184317913";
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  if (!form.reportValidity()) return;
+
+  const age = Number(document.getElementById("age").value);
+
+  if (age < 18) {
+    result.textContent =
+      "You must be at least 18 years old to register.";
+    return;
+  }
+
+  const data = new FormData(form);
+  let message = "NEW INTERNATIONAL RELATIONSHIP APPLICATION\n\n";
+
+  for (const [key, value] of data.entries()) {
+    message += key + ": " + value + "\n";
+  }
+
+  const method = document.getElementById("contactMethod").value;
+
+  if (method === "whatsapp") {
+    const url =
+      "https://wa.me/" + agentWhatsApp +
+      "?text=" + encodeURIComponent(message);
+
+    result.textContent =
+      "Opening WhatsApp. Review your application and press Send.";
+
+    window.location.href = url;
+  } else {
+    const url =
+      "mailto:" + agentEmail +
+      "?subject=" +
+      encodeURIComponent("New Relationship Application") +
+      "&body=" + encodeURIComponent(message);
+
+    result.textContent =
+      "Opening your email app. Review your application and press Send.";
+
+    window.location.href = url;
+  }
+});
+</script>
+
+</body>
+  </html>
