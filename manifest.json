@@ -1,0 +1,19 @@
+{
+"name": "Global Hearts",
+"short_name": "Global Hearts",
+"description": "Connect with people and build meaningful international relationships.",
+"start_url": "./",
+"scope": "./",
+"display": "standalone",
+"background_color": "#fff5f7",
+"theme_color": "#e91e63",
+"orientation": "portrait",
+"icons": [
+{
+"src": "icon.svg",
+"sizes": "any",
+"type": "image/svg+xml",
+"purpose": "any"
+}
+]
+}
